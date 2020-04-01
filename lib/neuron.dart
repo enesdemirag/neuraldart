@@ -4,8 +4,8 @@ class Neuron {
     static double max_weight;
 
     // Attributes
-    double[] weights;               // Updated weights after backpropagation
-    double[] weights_old;           // Weights before backpropagation (1 version older)
+    double weights = List();               // Updated weights after backpropagation
+    double weights_old = List();           // Weights before backpropagation (1 version older)
     double gradient;
     double bias;
     double value;

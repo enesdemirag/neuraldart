@@ -1,10 +1,10 @@
 class Pair { 
-    double[] data;
-    double[] expected_output;
+    double data = List();
+    double expected_output = List();
    
     Pair(this.data, this.expected_output);
 }
 
 class Dataset { 
-    Pair[] pairs;
+    Pair pairs = List();
 }
