@@ -1,7 +1,7 @@
 class Neuron {
     // Static Neuron Attributes 
-    static double max_weight;
     static double min_weight;
+    static double max_weight;
 
     // Attributes
     double[] weights;               // Updated weights after backpropagation
@@ -30,5 +30,10 @@ class Neuron {
     // Update method (to be used after the backpropagation for updating weights) 
     void updateWeights() {
         this.weights = this.weights_old;
+    }
+
+	static void setRange(double min, double max) {
+    	min_weight = min;
+    	max_weight = max;
     }
 }
