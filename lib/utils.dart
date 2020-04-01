@@ -19,3 +19,12 @@ static double sigmoidDerivative(double x) {
 static double squaredError(double output, double target) {
     return (0.5 * pow(2, (target - output))).toDouble();
 }
+
+// Used to calculate the overall error rate
+static double sumSquaredError(double[] outputs, double[] targets) {
+	double sum = 0;
+	for(var i in outputs) {
+		sum += squaredError(outputs[i], targets[i]);
+	}
+	return sum;
+}
