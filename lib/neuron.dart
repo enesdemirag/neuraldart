@@ -4,8 +4,8 @@ class Neuron {
     static double min_weight;
 
     // Attributes
-    double[] weights;               // Updated weights after back propagation
-    double[] weights_old;           // Weights before back propagation (1 version older)
+    double[] weights;               // Updated weights after backpropagation
+    double[] weights_old;           // Weights before backpropagation (1 version older)
     double gradient;
     double bias;
     double value;
