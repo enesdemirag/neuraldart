@@ -1,2 +1,4 @@
+[![Language](https://img.shields.io/badge/language-Dart-blue.svg)](https://dart.dev)
+
 # neuraldart
-A neural network library for dart from scratch.
+A Dart library for Neural Networks

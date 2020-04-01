@@ -1,7 +1,7 @@
-import '../lib/neuralnetwork.dart';
-import '../lib/dataset.dart';
+import '../lib/src/neuralnetwork.dart';
+import '../lib/src/dataset.dart';
 
-Dataset loadDataset() { // TODO: Make this more generic and get from json. 
+Dataset loadDataset() { // TODO: Make this more generic and get from yaml. 
 	double input1 = [0, 0];
 	double input2 = [0, 1];
 	double input3 = [1, 0];
