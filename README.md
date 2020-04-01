@@ -1,2 +1,2 @@
 # neuraldart
-Neural Network Implementation using Dart Programming
+A neural network library for dart from scratch.
