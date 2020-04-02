@@ -22,9 +22,9 @@ double squaredError(double output, double target) {
 
 // Used to calculate the overall error rate
 double sumSquaredError(double[] outputs, double[] targets) {
-	double sum = 0;
-	for(var i in outputs) {
-		sum += squaredError(outputs[i], targets[i]);
-	}
-	return sum;
+    double sum = 0;
+    for(var i in outputs) {
+        sum += squaredError(outputs[i], targets[i]);
+    }
+    return sum;
 }

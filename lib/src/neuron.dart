@@ -32,8 +32,8 @@ class Neuron {
         this.weights = this.weights_old;
     }
 
-	static void setRange(double min, double max) {
-    	min_weight = min;
-    	max_weight = max;
+    static void setRange(double min, double max) {
+        min_weight = min;
+        max_weight = max;
     }
 }
