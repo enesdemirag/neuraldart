@@ -1,7 +1,8 @@
 import '../lib/src/neuralnetwork.dart';
 import '../lib/src/dataset.dart';
 
-Dataset loadDataset() { // TODO: Make this more generic and get from yaml. 
+Dataset loadDataset() { // TODO: Make this more generic and get from yaml.
+	// XOR Example
 	double input1 = [0, 0];
 	double input2 = [0, 1];
 	double input3 = [1, 0];
