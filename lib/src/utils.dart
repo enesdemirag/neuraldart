@@ -2,7 +2,7 @@ import 'dart:math' as math;
 
 // Random double between min - max
 double randomWeight(int min, int max) {
-  math.Random rand; 
+  math.Random rand = new math.Random(); 
   return rand.nextDouble() * (max - min) + min;
 }
 

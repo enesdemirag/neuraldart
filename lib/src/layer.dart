@@ -19,7 +19,7 @@ class Layer {
         weights.add(utils.randomWeight(Neuron.min_weight, Neuron.max_weight));
       }
       double bias = utils.randomWeight(0, 1);
-      neurons.add(Neuron.namedConst(weights, bias));
+      this.neurons.add(Neuron.namedConst(weights, bias));
     }
   }
 }
