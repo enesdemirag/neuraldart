@@ -1,10 +1,17 @@
 class Pair { 
-    double data = <double>();;
-    double expected_output = <double>();;
+    List<double> data = [];
+    List<double> expected_output = [];
    
     Pair(this.data, this.expected_output);
+
+    // @override
+    int length() { // Lenght of the data
+        return data.length;
+    }
 }
 
 class Dataset { 
-    Pair pairs = <Pair>();;
+    List<Pair> pairs = [];
+    
+    Dataset(this.pairs);
 }
