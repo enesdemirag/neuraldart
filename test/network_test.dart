@@ -1,5 +1,6 @@
 import '../lib/src/neuralnetwork.dart';
 import '../lib/src/dataset.dart';
+import '../lib/src/layer.dart';
 
 void main() {
   NeuralNetwork nn = new NeuralNetwork(5);
