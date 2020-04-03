@@ -5,9 +5,16 @@ import 'dataset.dart';
 
 class NeuralNetwork {
   List<Layer> layers = [];
+  int size;
 
   NeuralNetwork(int size) {
-    this.layers.length = size;
+    this.size = size;
+    this.layers.length = this.size;
+  }
+
+  @override
+  int getSize() {
+    return this.size;
   }
 }
 
