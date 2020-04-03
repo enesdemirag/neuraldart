@@ -19,18 +19,18 @@ void main() {
   print("Output before training");
   print("============");
   for(var i in dataset.pairs) {
-    NeuralNetwork.forward(nn, i.input_data);
+    forward(nn, i.input_data);
     print('inputs: ' + nn.layers[0].neurons[0].value.toString() + ', ' + nn.layers[0].neurons[1].value.toString());
     print('output: ' + nn.layers[2].neurons[0].value.toString());
   }
   
-  NeuralNetwork.train(nn, dataset, 100000, 0.05);
+  train(nn, dataset, 100000, 0.05);
 
   print("============");
   print("Output after training");
   print("============");
   for(var i in dataset.pairs) {
-    NeuralNetwork.forward(nn, i.input_data);
+    forward(nn, i.input_data);
     print('inputs: ' + nn.layers[0].neurons[0].value.toString() + ', ' + nn.layers[0].neurons[1].value.toString());
     print('output: ' + nn.layers[2].neurons[0].value.toString());
   }

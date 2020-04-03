@@ -13,7 +13,7 @@ class NeuralNetwork {
 
 void forward(NeuralNetwork nn, List<double> inputs) {
   // Bring the inputs into the input layer
-  nn.layers.insert(0, Layer(inputs));
+  nn.layers[0] = Layer(inputs);
   
   // Forward propagation
   for(int i = 1; i < nn.layers.length; i++) { // Starts from 1st hidden layer
