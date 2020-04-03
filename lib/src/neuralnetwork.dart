@@ -1,7 +1,7 @@
-import 'neuron.dart';
-import 'layer.dart';
-import 'utils.dart' as utils;
-import 'dataset.dart';
+import 'package:neuraldart/src/neuron.dart';
+import 'package:neuraldart/src/layer.dart';
+import 'package:neuraldart/src/utils.dart' as utils;
+import 'package:neuraldart/src/dataset.dart';
 
 class NeuralNetwork {
   List<Layer> layers = [];
@@ -12,7 +12,6 @@ class NeuralNetwork {
     this.layers.length = this.size;
   }
 
-  @override
   int getSize() {
     return this.size;
   }

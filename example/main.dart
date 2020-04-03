@@ -1,7 +1,32 @@
-import '../lib/src/neuralnetwork.dart';
-import '../lib/src/dataset.dart';
+import 'package:neuraldart/src/neuron.dart';
+import 'package:neuraldart/src/layer.dart';
+import 'package:neuraldart/src/neuralnetwork.dart';
+import 'package:neuraldart/src/dataset.dart';
 
-// Main Method
+// XOR Example
+Dataset loadDataset() {
+  // TODO: Make this more generic. / create a get function from yaml etc.
+  List<double> input1 = [0, 0];
+  List<double> input2 = [0, 1];
+  List<double> input3 = [1, 0];
+  List<double> input4 = [1, 1];
+  
+  List<double> expected_output1 = [0];
+  List<double> expected_output2 = [1];
+  List<double> expected_output3 = [1];
+  List<double> expected_output4 = [0];
+  
+  Dataset dataset = new Dataset(); // Empty Dataset
+  
+  // Fill dataset with pairs of input and output data
+  dataset.pairs.add(Pair(input1, expected_output1));
+  dataset.pairs.add(Pair(input2, expected_output2));
+  dataset.pairs.add(Pair(input3, expected_output3));
+  dataset.pairs.add(Pair(input4, expected_output4));
+  
+  return dataset;
+}
+
 void main() {
   // Set Min and Max weight value for all neurons
   Neuron.setRange(-1, 1);

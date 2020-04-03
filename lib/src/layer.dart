@@ -1,5 +1,5 @@
-import 'neuron.dart';
-import 'utils.dart' as utils;
+import 'package:neuraldart/src/neuron.dart';
+import 'package:neuraldart/src/utils.dart' as utils;
 
 class Layer {
   List<Neuron> neurons = [];
