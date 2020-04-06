@@ -34,8 +34,8 @@ void main() {
   // Create a Neural Network with 3 Layers
   NeuralNetwork nn = new NeuralNetwork(3);    // 1 input + 1 hidden + 1 output
   // No need to add input layer, it will be added from dataset automatically
-  nn.layers[1] = Layer.namedConst(6,2);       // Hidden layer / 6 neurons each have 2 weights (connections)
-  nn.layers[2] = Layer.namedConst(1,6);       // Output layer / 1 neuron with 6 weights (connections) 
+  nn.layers[1] = Layer.hidden(6,2);       // Hidden layer / 6 neurons each have 2 weights (connections)
+  nn.layers[2] = Layer.hidden(1,6);       // Output layer / 1 neuron with 6 weights (connections) 
   
   // Create the training data
   Dataset dataset = loadDataset(); // Hard-coded for now.

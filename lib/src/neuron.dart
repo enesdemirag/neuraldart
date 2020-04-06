@@ -20,7 +20,7 @@ class Neuron {
   }
 
   // Constructor for hidden & output neurons
-  Neuron.namedConst(List weights, double bias) {
+  Neuron.hidden(List weights, double bias) {
     this.weights = weights;
     this.weights_old = this.weights;
     this.bias = bias;
