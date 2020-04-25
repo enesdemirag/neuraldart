@@ -12,3 +12,29 @@ Thanks to [@yacineMahdid](https://github.com/yacineMahdid) for backpropagation a
 ## Usage
 I wrote the [XOR Problem](example/main.dart) as an example. You can tweak it for your own dataset.
 
+#### Result
+```
+============
+Output before training
+============
+inputs: 0.0, 0.0
+output: 0.46662168559996103
+inputs: 0.0, 1.0
+output: 0.48409641563876016
+inputs: 1.0, 0.0
+output: 0.43438123457124833
+inputs: 1.0, 1.0
+output: 0.4505847499026291
+
+============
+Output after training
+============
+inputs: 0.0, 0.0
+output: 0.02568676661260416
+inputs: 0.0, 1.0
+output: 0.9758767143939321
+inputs: 1.0, 0.0
+output: 0.9794699040922308
+inputs: 1.0, 1.0
+output: 0.02227548086695073
+```
